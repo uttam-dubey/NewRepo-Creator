@@ -1,5 +1,4 @@
 import requests
-from getpass import getpass
 from bs4 import BeautifulSoup
 
 headers = {
