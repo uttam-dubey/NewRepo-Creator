@@ -1,4 +1,4 @@
-def response = httpRequest httpMode: 'POST', formData: [[contentType: 'application/json', name: 'model', body: '{"owner": "uttam-dubey",
+def response = httpRequest httpMode: 'POST', formData: [[contentType: 'application/json', name: 'model', body: '{
 	"repository[name]": "newone",
 	"repository[description]": "",
 	"repository[visibility]": "public",
