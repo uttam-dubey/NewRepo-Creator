@@ -1,12 +1,4 @@
-Pipeline{
-    stages{
-        stage("Github repo"){
-            sh """
-            curl \
-              -H "Accept: application/vnd.github.v3+json" \
-              https://api.github.com/repos/uttam-dubey/test1
-            """
-          }
-
-    }
-}
+await octokit.request('GET /repos/{owner}/{repo}', {
+  owner: 'uttam-dubey',
+  repo: 'test1'
+})
