@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh 'curl --version'
+        sh 'https://google.com'
       }
     }
   }
