@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        echo 'curl --version'
+        sh 'curl --version'
       }
     }
   }
