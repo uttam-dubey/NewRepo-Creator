@@ -1,4 +1,8 @@
-await octokit.request('GET /repos/{owner}/{repo}', {
-  owner: 'uttam-dubey',
-  repo: 'test1'
-})
+pipeline {
+  agent { any }
+  stages {
+    stage('Hello') {
+      steps {
+        sh 'curl --version'
+      }
+    }
