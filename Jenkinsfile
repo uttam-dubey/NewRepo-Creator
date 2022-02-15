@@ -1,9 +1,9 @@
 pipeline {
-  agent { label ' Linux01'}
+  agent any
   stages {
     stage('Hello') {
       steps {
-        sh 'https://google.com'
+        sh 'curl https://google.com'
       }
     }
   }
