@@ -12,7 +12,7 @@ pipeline {
     }
     stage('World') {
       steps {
-        sh """curl -H "Authorization: token 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" --data '{"name":"Mynewrepo"}' https://api.github.com/user/repos
+        sh """curl -H "Authorization: token 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" --data '{"name":"Mynewrepo"}' https://api.github.com/uttam-dubey/repos
           
           """
       }
