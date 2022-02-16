@@ -10,7 +10,7 @@ pipeline {
           """
       }
     }
-    stage('Hello') {
+    stage('World') {
       steps {
         sh """curl \
                 -X POST \
