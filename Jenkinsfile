@@ -4,6 +4,7 @@ pipeline {
     stage('Hello') {
       steps {
         sh """curl --header "Authorization: token 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" \
+              https://api.github.com/uttam-dubey/test1
 
           """
       }
