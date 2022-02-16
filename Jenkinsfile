@@ -3,8 +3,10 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh """
-          curl --version
+        sh """curl \
+              -H "Accept: application/vnd.github.v3+json" \
+              https://api.github.com/repos/octocat/hello-world
+          
           """
       }
     }
