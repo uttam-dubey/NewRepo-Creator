@@ -10,7 +10,7 @@ pipeline {
     }
     stage('New') {
       steps {
-        sh """curl -i -u your_username:$token https://api.github.com/users/uttam-dubey
+        sh """curl -i -u uttam-dubey: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 https://api.github.com/users/uttam-dubey
           
           """
       }
