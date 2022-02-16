@@ -3,9 +3,8 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh """curl --header "Authorization: token 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" \
-              https://api.github.com/uttam-dubey/test1
-
+        sh """
+              curl https://api.github.com/users/uttam-dubey
           """
       }
     }
