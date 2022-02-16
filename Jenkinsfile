@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh """curl --header "Authorization: token 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" \
+        sh """curl --header "Authorization: token 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" \
               https://api.github.com/uttam-dubey/test1
 
           """
@@ -11,7 +11,7 @@ pipeline {
     }
     stage('World') {
       steps {
-        sh """curl -H "Authorization: token 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" --data '{"name":"Mynewrepo"}' https://api.github.com/uttam-dubey/repos
+        sh """curl -H "Authorization: token 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" --data '{"name":"Mynewrepo"}' https://api.github.com/uttam-dubey/repos
           
           """
       }
