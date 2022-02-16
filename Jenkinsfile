@@ -12,11 +12,7 @@ pipeline {
     }
     stage('World') {
       steps {
-        sh """curl \
-                -X POST \
-                -H "Accept: application/vnd.github.v3+json" \
-                https://api.github.com/repos/uttam-dubey/test1/generate \
-                -d '{"uttam-dubey":"latestone"}'
+        sh """curl -H "Authorization: token ACCESS_TOKEN" --data '{"name":"NEW_REPO_NAME"}' https://api.github.com/user/repos
           
           """
       }
