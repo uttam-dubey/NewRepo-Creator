@@ -4,8 +4,11 @@ pipeline {
     stage('Hello') {
       steps {
         sh """curl \
-              -H "Accept: application/vnd.github.v3+json" \
-              https://api.github.com/repos/uttam-dubey/test1
+                -X POST \
+                -u uttam-dubey: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 \
+                -H "Accept: application/vnd.github.v3+json" \
+                https://api.github.com/orgs/uttam-dubey/repos \
+                -d '{"name":"Newrepofor-test"}
           
           """
       }
