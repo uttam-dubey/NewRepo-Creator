@@ -4,7 +4,7 @@ pipeline {
     stage('Worldly') {
       steps {
         sh """pwd
-              ls pwd
+              ls /bitnami/jenkins/home/workspace/Mypipeline_main
           """
       }
     }
