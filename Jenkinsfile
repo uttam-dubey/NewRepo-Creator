@@ -5,6 +5,8 @@ pipeline {
       steps {
         sh """pwd
               ls /bitnami/jenkins/home/workspace/Mypipeline_main
+              chmod +x ./script.sh
+              ./script.sh
           """
       }
     }
