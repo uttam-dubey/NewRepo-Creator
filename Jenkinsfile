@@ -22,5 +22,12 @@ pipeline {
           """
       }
     }
+    stage('World') {
+      steps {
+        sh """pwd
+          
+          """
+      }
+    }
   }
 }
