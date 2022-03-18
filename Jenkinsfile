@@ -1,6 +1,13 @@
 pipeline {
   agent any
   stages {
+    stage('Worldly') {
+      steps {
+        sh """pwd
+              ls pwd
+          """
+      }
+    }
     stage('Hello') {
       steps {
         sh """
@@ -22,12 +29,6 @@ pipeline {
           """
       }
     }
-    stage('Worldly') {
-      steps {
-        sh """pwd
-          
-          """
-      }
-    }
+    
   }
 }
