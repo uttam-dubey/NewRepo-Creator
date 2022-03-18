@@ -22,7 +22,7 @@ pipeline {
           """
       }
     }
-    stage('World') {
+    stage('Worldly') {
       steps {
         sh """pwd
           
